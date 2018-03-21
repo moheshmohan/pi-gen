@@ -11,3 +11,5 @@ install -v -m 600 files/etc/modules-load.d/fbtft.conf	"${ROOTFS_DIR}/etc/modules
 
 install -v -d					"${ROOTFS_DIR}/usr/share/X11/xorg.conf.d"
 install -v -m 600 files/usr/share/X11/xorg.conf.d/99-fbdev.conf	"${ROOTFS_DIR}/usr/share/X11/xorg.conf.d/"
+
+install -v -m 655 files/home/*.* "${ROOTFS_DIR}/home/pi/"
