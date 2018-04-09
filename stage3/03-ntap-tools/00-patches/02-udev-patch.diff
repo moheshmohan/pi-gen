@@ -1,0 +1,20 @@
+--- a/rootfs/lib/systemd/system/systemd-udevd.service
++++ b/rootfs/lib/systemd/system/systemd-udevd.service
+@@ -21,10 +21,10 @@
+ Restart=always
+ RestartSec=0
+ ExecStart=/lib/systemd/systemd-udevd
+-KillMode=mixed
+-WatchdogSec=3min
+-TasksMax=infinity
+-MountFlags=slave
+-MemoryDenyWriteExecute=yes
+-RestrictRealtime=yes
+-RestrictAddressFamilies=AF_UNIX AF_NETLINK AF_INET AF_INET6
++#KillMode=mixed
++#WatchdogSec=3min
++#TasksMax=infinity
++#MountFlags=slave
++#MemoryDenyWriteExecute=yes
++#RestrictRealtime=yes
++#RestrictAddressFamilies=AF_UNIX AF_NETLINK AF_INET AF_INET6
